@@ -1,0 +1,10 @@
+{
+  "a": 0.08,
+  "b": 0.0,
+  "metrics": {
+    "brier": 0.2571757045993792,
+    "ece_10": 0.5049738856640577,
+    "n": 534,
+    "note": "single-class labels; default a,b used"
+  }
+}

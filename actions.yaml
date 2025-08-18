@@ -1,0 +1,32 @@
+corn.us:
+  - persona: traders
+    when: { pillar: movement, threshold: 60 }
+    do:
+      - "Widen basis bids at river elevators by 3–8¢"
+      - "Pre-allocate rail; reduce barge reliance next 7d"
+      - "Review Dec/Mar carry exposure"
+    notify: ["#trading", "#logistics"]
+  - persona: procurement
+    when: { pillar: production, threshold: 65 }
+    do:
+      - "Increase hedge ratio by 5–10%"
+      - "Schedule field checks 48h ahead"
+
+srw_wheat.us:
+  - persona: traders
+    when: { pillar: movement, threshold: 60 }
+    do:
+      - "Shift export programs to rail where feasible"
+      - "Hedge barge exposure for next 2 weeks"
+  - persona: procurement
+    when: { pillar: production, threshold: 65 }
+    do:
+      - "Advance purchase of milling wheat for 2–3 weeks"
+      - "Secure alternative origins where possible"
+
+poultry.us:
+  - persona: operators
+    when: { pillar: biosecurity, threshold: 40, weather: conducive }
+    do:
+      - "Tighten biosecurity SOPs"
+      - "Freeze live-bird transfers 72h"
